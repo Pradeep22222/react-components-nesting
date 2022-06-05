@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import faker from "faker";
 import CommentDetail from "./CommentDetail";
 import ApprovalCard from "./ApprovalCard";
+import Heading from "./Heading";
 
 if (module.hot) {
   module.hot.accept();
@@ -12,6 +13,7 @@ const App = () => {
   return (
     <div className="ui container comments">
       <ApprovalCard>
+        <Heading />
         <CommentDetail
           author="Sam"
           timeAgo="Today at 4:45PM"
@@ -19,14 +21,13 @@ const App = () => {
           avatar={faker.image.image()}
         />
       </ApprovalCard>
-      <ApprovalCard>
-        <CommentDetail
-          author="Alex"
-          timeAgo="Today at 2:00AM"
-          content="I like the subject"
-          avatar={faker.image.image()}
-        />
-      </ApprovalCard>
+
+      <CommentDetail
+        author="Alex"
+        timeAgo="Today at 2:00AM"
+        content="I like the subject"
+        avatar={faker.image.image()}
+      />
 
       <CommentDetail
         author="Jane"

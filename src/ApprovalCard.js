@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
 
-const ApprovalCard = props => {
+const ApprovalCard = (props) => {
+  console.log(props.children);
   return (
     <div className="ui card">
-      <div className="content">{props.children}</div>
+      <div>{props.children[0]}</div>
+      <div>{props.children[1]}</div>
       <div className="extra content">
         <div className="ui two buttons">
           <div className="ui basic green button">Approve</div>
