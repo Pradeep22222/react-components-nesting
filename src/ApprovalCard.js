@@ -4,8 +4,7 @@ const ApprovalCard = (props) => {
   console.log(props.children);
   return (
     <div className="ui card">
-      <div>{props.children[0]}</div>
-      <div>{props.children[1]}</div>
+      <div>{props.children}</div>
       <div className="extra content">
         <div className="ui two buttons">
           <div className="ui basic green button">Approve</div>

@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
-const CommentDetail = props => {
+const CommentDetail = (props) => {
   return (
     <div className="comment">
       <a href="/" className="avatar">
-        <img alt="avatar" src={props.avatar} />
+        <img alt="avatar" src={props.avatar} className={props.avatar_img} />
       </a>
       <div className="content">
         <a href="/" className="author">
